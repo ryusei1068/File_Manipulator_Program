@@ -18,7 +18,7 @@ def reverse_content(*args):
     inputpath = args[0]
     outputpath = args[1]
 
-    if not verify_file_extend(inputpath, len(inputpath) - 4, '.txt') or not verify_file_extend(outputpath, len(inputpath) - 4, '.txt'):
+    if not verify_file_extend(inputpath, len(inputpath) - 4, '.txt') or not verify_file_extend(outputpath, len(outputpath) - 4, '.txt'):
         sys.stdout.buffer.write(b'you can use file extend that .txt')
         sys.exit(1)
 
@@ -33,7 +33,7 @@ def copy_content(*args):
     inputpath = args[0]
     outputpath = args[1]
 
-    if not verify_file_extend(inputpath, len(inputpath) - 4, '.txt') or not verify_file_extend(outputpath, len(inputpath) - 4, '.txt'):
+    if not verify_file_extend(inputpath, len(inputpath) - 4, '.txt') or not verify_file_extend(outputpath, len(outputpath) - 4, '.txt'):
         sys.stdout.buffer.write(b'you can use file extend that .txt')
         sys.exit(1)
 
